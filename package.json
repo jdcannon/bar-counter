@@ -1,0 +1,22 @@
+{
+  "name": "bar-counter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:css": "sass --scss src/client/style.scss src/client/public/style.css",
+    "build:js-watch": "node_modules/webpack/bin/webpack.js -d --watch",
+    "build:js": "node_modules/webpack/bin/webpack.js -d",
+    "build": "npm run build:css && npm run build:js",
+    "dev": "npm run build:css && npm run build:js-watch"
+  },
+  "author": "JDC",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.24.0",
+    "babel-loader": "^6.4.1",
+    "babel-preset-react": "^6.23.0",
+    "webpack": "^2.2.1"
+  }
+}

@@ -1,0 +1,80 @@
+*, *:before, *:after {
+  box-sizing: border-box; }
+
+body {
+  margin: 0; }
+
+.e, .c {
+  padding: 10px; }
+
+.row, .col {
+  display: flex; }
+
+.row {
+  flex-flow: row nowrap; }
+
+.col {
+  flex-flow: column nowrap; }
+
+header, footer {
+  width: 100vw;
+  height: 10vh;
+  background-color: blue;
+  justify-content: center;
+  align-items: center; }
+  header h1, header h2, header h3, footer h1, footer h2, footer h3 {
+    margin: 0; }
+
+main > section {
+  margin-top: 10vh;
+  background-color: #0f0;
+  height: 80vh;
+  justify-content: space-around; }
+
+.fixed {
+  position: fixed;
+  left: 0; }
+
+.top {
+  top: 0; }
+
+.bottom {
+  bottom: 0; }
+
+.button {
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  border-radius: .25rem;
+  background-color: #aaa; }
+
+.btn-men {
+  background-color: blue; }
+
+.btn-women {
+  background-color: pink; }
+
+.decButton {
+  padding: 0 1.5rem; }
+  .decButton img {
+    width: 100%;
+    height: 100%; }
+
+.buttons {
+  justify-content: center;
+  align-items: center;
+  align-self: center; }
+  .buttons .button {
+    width: 30vw;
+    height: 30vw;
+    font-size: 2rem;
+    justify-content: center;
+    align-items: center; }
+
+.count {
+  font-size: 1.5rem;
+  margin: .5em 0;
+  text-align: center; }
+
+/*# sourceMappingURL=style.css.map */
