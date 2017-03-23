@@ -46,8 +46,8 @@ main > section {
   -ms-user-select: none;
   -moz-user-select: none;
   user-select: none;
-  border-radius: .25rem;
-  background-color: #aaa; }
+  background-color: #aaa;
+  padding: .2em; }
 
 .btn-men {
   background-color: blue; }
@@ -56,7 +56,7 @@ main > section {
   background-color: pink; }
 
 .decButton {
-  padding: 0 1.5rem; }
+  padding: 0 .2em; }
   .decButton img {
     width: 100%;
     height: 100%; }
@@ -68,7 +68,8 @@ main > section {
   .buttons .button {
     width: 30vw;
     height: 30vw;
-    font-size: 2rem;
+    font-size: 30vw;
+    border-radius: 50%;
     justify-content: center;
     align-items: center; }
     .buttons .button img {

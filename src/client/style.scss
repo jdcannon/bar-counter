@@ -36,8 +36,8 @@ main{
     -ms-user-select: none;
     -moz-user-select: none;
     user-select: none;
-    border-radius: .25rem;
     background-color: #aaa;
+    padding: .2em;
 }
 .btn-men{
     background-color: $btn-men-color;
@@ -46,7 +46,7 @@ main{
     background-color: $btn-women-color;
 }
 .decButton{
-    padding: 0 1.5rem;
+    padding: 0 .2em;
     img{
         width: 100%;
         height: 100%;
@@ -59,7 +59,8 @@ main{
     .button{
         width: 30vw;
         height: 30vw;
-        font-size: 2rem;
+        font-size: 30vw;
+        border-radius: 50%;
         justify-content: center;
         align-items: center;
         img{
