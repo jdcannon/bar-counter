@@ -7,12 +7,25 @@ class App extends React.Component{
     constructor(props){
         super(props);
         this.state = {
+            log: [],
             total: 0,
             men: 0,
             women: 0
         };
         this.incrementCount =  this.incrementCount.bind(this);
         this.decrementCount =  this.decrementCount.bind(this);
+        this.setState = this.setState.bind(this);
+    }
+    logCount(){
+        this.setState((prev, props)=>{
+            let newLog = {};
+            newLog.date = Date.now();
+            newLog.total = prev.total;
+            newLog.men = prev.men;
+            newLog.women = prev.women;
+            prev.log.push(newLog);
+            return prev;
+        })
     }
     incrementCount(demo){
         this.setState((prev,props)=>{
@@ -20,6 +33,7 @@ class App extends React.Component{
             prev.total += 1;
             return prev;
         });
+        this.logCount();
     }
     decrementCount(demo){
         this.setState((prev,props)=>{
@@ -29,6 +43,7 @@ class App extends React.Component{
             }
             return prev;
         });
+        this.logCount();
     }
 
     render(){
