@@ -10,6 +10,11 @@ var config = {
         path: BUILD_DIR,
         filename: 'bundle.js'
     },
+    plugins: [
+        new webpack.ProvidePlugin({
+            "d3": "d3"
+        })
+    ],
     module: {
         loaders: [
             {

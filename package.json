@@ -6,8 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:css": "sass --scss src/client/style.scss src/client/public/style.css",
-    "build:js-watch": "node_modules/webpack/bin/webpack.js -d --watch",
-    "build:js": "node_modules/webpack/bin/webpack.js -d",
+    "build:js-watch": "node node_modules/webpack/bin/webpack.js -d --watch",
+    "build:js": "node node_modules/webpack/bin/webpack.js -d",
     "build": "npm run build:css && npm run build:js",
     "dev": "npm run build:css && npm run build:js-watch"
   },
